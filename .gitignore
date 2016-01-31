@@ -1,0 +1,7 @@
+# ignore some state tiddlers
+**/*StoryList.tid
+
+# ignore file in these paths
+edition/GNUCash-LanguageStudyNotebook/output/
+
+
