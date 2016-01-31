@@ -1,0 +1,9 @@
+created: 20150812162748737
+modified: 20160131194602563
+title: Create Vocabulary Entry Rule
+type: text/vnd.tiddlywiki
+
+|!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
+|$:/temp/NewVocabularyEntry|||[[If Exists Close Previous Entry Field Delta Details]]||append add|
+|$:/temp/NewVocabularyEntry|||[[Create Vocabulary Entry Rule Field Delta Details]]||append add|
+|[[VocabularyEntryTiddlerTitle]]||VocabularyEntry|[[Add Entry Component to List Field Details]]||append add|

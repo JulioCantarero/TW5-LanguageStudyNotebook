@@ -1,0 +1,11 @@
+created: 20150814142629098
+modified: 20160131194602625
+title: VocabularyEntryTiddlerTitle
+type: text/plain
+
+[
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"$title": "((*#temp1/#rule/#term*))"}
+]

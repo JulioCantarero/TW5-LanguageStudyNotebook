@@ -1,0 +1,23 @@
+created: 20150813124947814
+modified: 20160131194602580
+title: If Exists Close Previous Entry Field Delta Details
+type: text/plain
+
+[
+  {"#emptystring":""},
+  {"#tempfield":"((*@exists($item_definition)*??*$item_definition*??*#emptystring*))"},
+  {"$item_definition":"((*#tempfield*))"},
+  {"#tempfield":"((*@exists($item_examples)*??*$item_examples*??*#emptystring*))"},
+  {"$item_examples":"((*#tempfield*))"},
+  {"#tempfield":"((*@exists($item_notes)*??*$item_notes*??*#emptystring*))"},
+  {"$item_notes":"((*#tempfield*))"},
+  {"#tempfield":"((*@exists($item_type)*??*$item_type*??*#emptystring*))"},
+  {"$item_type":"((*#tempfield*))"},
+  {"#tempfield":"((*@exists($item_other_forms)*??*$item_other_forms*??*#emptystring*))"},
+  {"$item_other_forms":"((*#tempfield*))"},
+  {"#tempfield":"((*@exists($ipa_pronuntiation)*??*$ipa_pronuntiation*??*#emptystring*))"},
+  {"$ipa_pronuntiation":"((*#tempfield*))"},
+  {"#componenttitle":"((*@exists($vocabulary_entry)*??*$vocabulary_entry*))((*@exists($timestamp_suffix)*??*$timestamp_suffix*))"},
+  {"#temptitle":"((*@exists($vocabulary_entry)*??*#componenttitle*??*$title*))"},
+  {"$title":"((*#temptitle*))"}
+]

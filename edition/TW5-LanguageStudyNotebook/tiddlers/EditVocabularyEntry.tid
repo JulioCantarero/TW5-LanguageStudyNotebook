@@ -1,0 +1,13 @@
+created: 20150812153528684
+item_definition: 
+modified: 20160131194602549
+tags: 
+title: EditVocabularyEntry
+type: text/vnd.tiddlywiki
+
+|!Type |<$edit field="item_type"/> |
+|!Pronuntiation |<$edit field="ipa_pronuntiation"/> |
+|!Definition |<$edit-text field="item_definition" tag="textarea" size="100"/> |
+|!Examples |<$edit-text field="item_examples" tag="textarea"/> |
+|!Notes |<$edit-text field="item_notes" tag="textarea"/> |
+|!Other Forms |<$edit field="item_other_forms"/> |
