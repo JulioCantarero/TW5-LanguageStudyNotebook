@@ -1,0 +1,14 @@
+created: 20150812180642005
+modified: 20160325102800360
+title: Append Definition
+type: text/plain
+
+[
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"#newparagraph":"<br>"},
+  {"#tempfield":"((*@exists($item_definition)*??*$item_definition*))((*@exists($item_definition)*??*#newparagraph*))((*#temp2*))"},
+  {"$item_definition":"((*#tempfield*))"}
+]

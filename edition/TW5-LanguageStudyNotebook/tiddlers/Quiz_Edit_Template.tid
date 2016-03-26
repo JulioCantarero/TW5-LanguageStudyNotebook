@@ -1,0 +1,15 @@
+created: 20160323075629041
+modified: 20160324173143798
+tags: $:/tags/EditTemplate
+title: Quiz Edit Template
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[QuizRecord]]">
+<$set name="c" filter={{!!contents-filter}}><$set name="successRatio" value=<<calc !!correct-answers / by:!!total-attempts>> >
+   <$button> Initialize Quiz
+      <$action-setfield quiz-run-times=<<calc !!quiz-run-times +1>> />
+      <$action-listops $field="quiz-scores" $subfilter="+[append<successRatio>]" />
+      <$action-setfield original-quiz-list=<<c>> remaining-quiz-list=<<c>> correct-answers=0 correct-items="" total-attempts=0 wrong-items="" />
+   </$button>
+</$set></$set>
+</$list>

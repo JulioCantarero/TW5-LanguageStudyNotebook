@@ -1,8 +1,8 @@
 created: 20150812221649259
-modified: 20160131194602522
+modified: 20160325232020701
 title: Close Entry Rule
 type: text/vnd.tiddlywiki
 
 |!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
-|$:/temp/NewVocabularyEntry|||[[Close Entry Rule Field Delta Details]]||append add|
-|$:/temp/NewVocabularyEntry|||[[Clean Temp Tiddler Field Delta Details]]||append add|
+|$:/temp/NewVocabularyEntry|||[[Close Entry Using Timestamps]]||append add|
+|$:/temp/NewVocabularyEntry|||[[Clean Temp Tiddler Fields]]||append add|

@@ -1,10 +1,10 @@
-created: 20160320121510569
-modified: 20160320200747113
+created: 20150812091350085
+modified: 20160320200720413
 tags: $:/tags/ViewTemplate
-title: ViewVocabularyEntry
+title: ViewVocabularyEntryComponent
 type: text/vnd.tiddlywiki
 
-<$list filter="[field:vocabulary_entry<currentTiddler>tag[VocabularyEntryComponent]]">
+<$list filter="[all[current]tag[VocabularyEntryComponent]]">
 
 ! {{!!vocabulary_entry}} // /{{!!ipa_pronuntiation}}/ //
 ''Definition:'' ({{!!item_type}}) {{!!item_definition}} 

@@ -1,0 +1,20 @@
+created: 20160323110411486
+modified: 20160323111016320
+tags: $:/tags/Stylesheet
+title: Quiz CSS
+type: text/css
+
+/*
+   Usually we don't want the answer to be shown at once. So we hide them in a grey bar.
+*/
+.tc-tagged-QuizRecord p.answer {
+    background-color: grey;
+    color: grey;
+}
+/*
+   But if the mouse points to it, it will be shown.
+*/
+.tc-tagged-QuizRecord p.answer:hover {
+    background-color: inherit;
+    color: inherit;
+}

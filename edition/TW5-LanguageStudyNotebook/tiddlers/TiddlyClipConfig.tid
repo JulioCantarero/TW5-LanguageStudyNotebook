@@ -1,27 +1,37 @@
 created: 20150812161713725
-modified: 20160131194602605
+modified: 20160325225209836
 title: TiddlyClipConfig
 type: text/vnd.tiddlywiki
 
 !default
 |!Category|!Tip|!Tags|!Rule Tid|!Modes|
-|Create New Vocabulary Entry|Add a new word to your vocabulary notebook. Select just the word/expression. You can add the definition and other information afterwards.||[[Create Vocabulary Entry Rule]]|clip|
-|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created.||[[Append Pronuntiation Rule]]|clip|
-|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created.||[[Append Type Rule]]|clip|
-|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created.||[[Append Definition Rule]]|clip|
-|Add Example|Copy the selected text as an Example of the last vocabulary entry created.||[[Append Examples Rule]]|clip|
-|Add Notes|Copy the selected text in the Notes field of the last vocabulary entry created.||[[Append Notes Rule]]|clip|
-|Add Other Forms|Copy the selected text in the Other Forms field of the last vocabulary entry created (usually for different spelllings or derived words).||[[Append Other Forms Rule]]|clip|
+|Create New Vocabulary Entry|Add a new word to your vocabulary notebook. Select just the word/expression. You can add the definition and other information afterwards.||[[Create Vocabulary Entry Rule]]|Clip|
+|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created.||[[Append Pronuntiation Rule]]|Clip|
+|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created.||[[Append Type Rule]]|Clip|
+|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created.||[[Append Definition Rule]]|Clip|
+|Add Example|Copy the selected text as an Example of the last vocabulary entry created.||[[Append Examples Rule]]|Clip|
+|Add Notes|Copy the selected text in the Notes field of the last vocabulary entry created.||[[Append Notes Rule]]|Clip|
+|Add Other Forms|Copy the selected text in the Other Forms field of the last vocabulary entry created (usually for different spelllings or derived words).||[[Append Other Forms Rule]]|Clip|
 |Clear All Fields (Optional)|Delete the information collected so far -except the word- and start again||[[Clear All Fields Rule]]||
 |Close Entry (Optional)|Click here when you have collected all the information about the word you want. The Vocabulary entry will be created. But if you just Create a New Vocabulary Entry, the previous word will be autimatically saved.||[[Close Entry Rule]]||
 !Cambridge Dictionaries Online
 |!Category|!Tip|!Tags|!Rule Tid|!Modes|
 |Create New Vocabulary Entry|Add a new word to your vocabulary notebook. You do not need to select any text. The word/expression you searched will be added. You can add the definition and other information afterwards.||[[Create Vocabulary Entry from Web Page Title Rule]]||
-|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Pronuntiation Rule]]|clip|
-|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Type Rule]]|clip|
-|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Definition Rule]]|clip|
-|Add Example|Copy the selected text as an Example of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Examples Rule]]|clip|
-|Add Notes|Copy the selected text in the Notes field of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Notes Rule]]|clip|
-|Add Other Forms|Copy the selected text in the Other Forms field of the last vocabulary entry created (usually for different spelllings or derived words).||[[Append Other Forms Rule]]|clip|
+|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Pronuntiation Rule]]|Clip|
+|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Type Rule]]|Clip|
+|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Definition Rule]]|Clip|
+|Add Example|Copy the selected text as an Example of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Examples Rule]]|Clip|
+|Add Notes|Copy the selected text in the Notes field of the last vocabulary entry created. The Word/Expression is automatically read from the page.||[[Append Notes Rule]]|Clip|
+|Add Other Forms|Copy the selected text in the Other Forms field of the last vocabulary entry created (usually for different spelllings or derived words).||[[Append Other Forms Rule]]|Clip|
 |Clear All Fields (Optional)|Delete the information collected so far -except the word- and start again||[[Clear All Fields Rule]]||
 |Close Entry (Optional)|Click here when you have collected all the information about the word you want. The Vocabulary entry will be created. But if you just move on to capture another word, the previous word will be autimatically saved.||[[Close Entry Rule]]||
+!Test
+|!Category|!Tip|!Tags|!Rule Tid|!Modes|
+|Create New Vocabulary Entry|Add a new word to your vocabulary notebook. Select just the word/expression. You can add the definition and other information afterwards.||[[Test Create Vocabulary Entry Rule]]|Clip|
+|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created.||[[Append Pronuntiation Rule]]|Clip|
+|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created.||[[Append Type Rule]]|Clip|
+|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created.||[[Append Definition Rule]]|Clip|
+
+!Test 2
+|!Category|!Tip|!Tags|!Rule Tid|!Modes|
+|Test Global Vars|||[[Test Global Vars Rule]]||
