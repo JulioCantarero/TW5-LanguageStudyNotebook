@@ -1,9 +1,7 @@
 created: 20150812162748737
-modified: 20160325230619333
+modified: 20160327094429323
 title: Create Vocabulary Entry Rule
 type: text/vnd.tiddlywiki
-
-\rules only table wikilink prettylink
 
 |!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
 |$:/temp/NewVocabularyEntry|||[[If Exists Close Previous Entry Using Timestamps]]||append add|
