@@ -1,5 +1,5 @@
 created: 20150812161713725
-modified: 20160325225209836
+modified: 20160327092218496
 title: TiddlyClipConfig
 type: text/vnd.tiddlywiki
 
@@ -25,13 +25,3 @@ type: text/vnd.tiddlywiki
 |Add Other Forms|Copy the selected text in the Other Forms field of the last vocabulary entry created (usually for different spelllings or derived words).||[[Append Other Forms Rule]]|Clip|
 |Clear All Fields (Optional)|Delete the information collected so far -except the word- and start again||[[Clear All Fields Rule]]||
 |Close Entry (Optional)|Click here when you have collected all the information about the word you want. The Vocabulary entry will be created. But if you just move on to capture another word, the previous word will be autimatically saved.||[[Close Entry Rule]]||
-!Test
-|!Category|!Tip|!Tags|!Rule Tid|!Modes|
-|Create New Vocabulary Entry|Add a new word to your vocabulary notebook. Select just the word/expression. You can add the definition and other information afterwards.||[[Test Create Vocabulary Entry Rule]]|Clip|
-|Add Pronuntiation|Copy the selected text as the Pronuntiation of the last vocabulary entry created.||[[Append Pronuntiation Rule]]|Clip|
-|Add Entry Type|Copy the selected text as the Type of the last vocabulary entry created.||[[Append Type Rule]]|Clip|
-|Add Definition|Copy the selected text as the Definition of the last vocabulary entry created.||[[Append Definition Rule]]|Clip|
-
-!Test 2
-|!Category|!Tip|!Tags|!Rule Tid|!Modes|
-|Test Global Vars|||[[Test Global Vars Rule]]||
