@@ -1,0 +1,15 @@
+created: 20160327102843502
+modified: 20160327102949228
+tags: 
+title: VocabularyEntryTiddlerTitle from Web Page URI
+type: text/plain
+
+[
+  {"#rule2": "/http:.*\\/([^\\/\\?]+)(\\?\\S*$|$)/g"},
+  {"#term": "$1"},
+  {"#searchedtext": "((*@pageRef/#rule2/#term*))"},
+  {"#temp1":"((*@hasText*??*@text*??*#searchedtext*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"$title": "((*#temp1/#rule/#term*))"}
+]

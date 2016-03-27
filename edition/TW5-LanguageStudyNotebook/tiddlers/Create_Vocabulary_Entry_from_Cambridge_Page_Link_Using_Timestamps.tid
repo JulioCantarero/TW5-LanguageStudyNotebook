@@ -1,0 +1,27 @@
+created: 20150813173106539
+modified: 20160327102422700
+title: Create Vocabulary Entry from Cambridge Page Link Using Timestamps
+type: text/plain
+
+[
+  {"$type":"text/vnd.tiddlywiki"},
+  {"$location":"((*@pageRef*))"},
+  {"$when":"((*@dateTimeShort*))"},
+  {"#rule2": "/http:.*\\/([^\\/\\?]+)(\\?\\S*$|$)/g"},
+  {"#term": "$1"},
+  {"#searchedtext": "((*@pageRef/#rule2/#term*))"},
+  {"#temp1":"((*@hasText*??*@text*??*#searchedtext*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"$vocabulary_entry":"((*#temp2*))"},
+  {"#rule": "/\\d+\\/\\d+\\/(\\d+)\\s(\\d+):(\\d+):(\\d+)$/g"},
+  {"#term": "$1$2$3$4"},
+  {"#timestamp": "((*@dateTimeShort/#rule/#term*))"},
+  {"$timestamp_suffix":"((*#timestamp*))"},
+  {"#mydummyvar1":"((*@exists($item_definition)*??*@delete($item_definition)*))"},
+  {"#mydummyvar2":"((*@exists($item_examples)*??*@delete($item_examples)*))"},
+  {"#mydummyvar3":"((*@exists($item_notes)*??*@delete($item_notes)*))"},
+  {"#mydummyvar4":"((*@exists($item_other_forms)*??*@delete($item_other_forms)*))"},
+  {"#mydummyvar5":"((*@exists($item_type)*??*@delete($item_type)*))"},
+  {"#mydummyvar6":"((*@exists($ipa_pronuntiation)*??*@delete($ipa_pronuntiation)*))"}
+]
