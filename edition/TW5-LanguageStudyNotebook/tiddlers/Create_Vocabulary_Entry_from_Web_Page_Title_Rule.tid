@@ -1,8 +1,8 @@
 created: 20150813173005401
-modified: 20160131194602565
+modified: 20160325101743857
 title: Create Vocabulary Entry from Web Page Title Rule
 type: text/vnd.tiddlywiki
 
 |!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
-|$:/temp/NewVocabularyEntry|||[[If Exists Close Previous Entry Field Delta Details]]||append add|
+|$:/temp/NewVocabularyEntry|||[[If Exists Close Previous Entry]]||append add|
 |$:/temp/NewVocabularyEntry||VocabularyEntry|[[Create Vocabulary Entry from Cambridge Page Link Rule Field Delta Details]]||append add|

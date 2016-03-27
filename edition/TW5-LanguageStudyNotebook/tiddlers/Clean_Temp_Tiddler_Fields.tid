@@ -1,0 +1,18 @@
+created: 20150813123541884
+modified: 20160325231836922
+title: Clean Temp Tiddler Fields
+type: text/plain
+
+[
+  {"#mydummyvar20":"((*@exists($tags)*??*@delete($tags)*))"},
+  {"#mydummyvar10":"((*@exists($vocabulary_entry)*??*@delete($vocabulary_entry)*))"},
+  {"#mydummyvar11":"((*@exists($location)*??*@delete($location)*))"},
+  {"#mydummyvar13":"((*@exists($when)*??*@delete($when)*))"},
+  {"#mydummyvar14":"((*@exists($timestamp_suffix)*??*@delete($timestamp_suffix)*))"},
+  {"#mydummyvar1":"((*@exists($item_definition)*??*@delete($item_definition)*))"},
+  {"#mydummyvar2":"((*@exists($item_examples)*??*@delete($item_examples)*))"},
+  {"#mydummyvar3":"((*@exists($item_notes)*??*@delete($item_notes)*))"},
+  {"#mydummyvar4":"((*@exists($item_other_forms)*??*@delete($item_other_forms)*))"},
+  {"#mydummyvar5":"((*@exists($item_type)*??*@delete($item_type)*))"},
+  {"#mydummyvar6":"((*@exists($ipa_pronuntiation)*??*@delete($ipa_pronuntiation)*))"}
+]

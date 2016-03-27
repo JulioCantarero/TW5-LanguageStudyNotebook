@@ -1,7 +1,7 @@
 created: 20150813120254467
-modified: 20160131194602526
+modified: 20160325103025219
 title: Clear All Fields Rule
 type: text/vnd.tiddlywiki
 
 |!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
-|$:/temp/NewVocabularyEntry|||[[Clear All Fields Rule Field Delta Details]]||append add|
+|$:/temp/NewVocabularyEntry|||[[Clear All Fields]]||append add|

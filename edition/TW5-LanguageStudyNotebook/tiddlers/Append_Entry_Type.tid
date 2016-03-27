@@ -1,0 +1,15 @@
+created: 20150813074557741
+modified: 20160325102708745
+tags: 
+title: Append Entry Type
+type: text/plain
+
+[
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"#space":" "},
+  {"#tempfield":"((*@exists($item_type)*??*$item_type*))((*@exists($item_type)*??*#space*))((*#temp2*))"},
+  {"$item_type":"((*#tempfield*))"}
+]

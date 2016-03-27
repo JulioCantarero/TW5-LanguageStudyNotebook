@@ -1,0 +1,15 @@
+created: 20150813074115364
+modified: 20160325102929925
+tags: 
+title: Append Note
+type: text/plain
+
+[
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"#newparagraph":"<br>"},
+  {"#tempfield":"((*@exists($item_notes)*??*$item_notes*))((*@exists($item_notes)*??*#newparagraph*))((*#temp2*))"},
+  {"$item_notes":"((*#tempfield*))"}
+]

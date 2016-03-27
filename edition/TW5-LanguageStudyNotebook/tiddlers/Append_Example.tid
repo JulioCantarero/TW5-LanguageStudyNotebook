@@ -1,0 +1,15 @@
+created: 20150813073959741
+modified: 20160325102832849
+tags: 
+title: Append Example
+type: text/plain
+
+[
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"#newparagraph":"<br>"},
+  {"#tempfield":"((*@exists($item_examples)*??*$item_examples*))((*@exists($item_examples)*??*#newparagraph*))((*#temp2*))"},
+  {"$item_examples":"((*#tempfield*))"}
+]

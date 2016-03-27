@@ -1,0 +1,35 @@
+created: 20160323075624979
+modified: 20160324172812081
+tags: $:/tags/ViewTemplate
+title: Quiz View Template
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[QuizRecord]]">
+<$list filter="[list[!!remaining-quiz-list]first[]]" variable="currentQuestion" emptyMessage="Quiz Completed! <br> No more records to show. Please reset the Quiz if you want to run it again. <br> <br>" >
+
+<$list filter="[all[current]get[quiz-type]each:list-item[questions]]" variable="questionField">
+<$transclude tiddler=<<currentQuestion>> field=<<questionField>> />
+</$list>
+
+@@.answer
+<$list filter="[all[current]get[quiz-type]each:list-item[answers]]" variable="answerField">
+<$transclude tiddler=<<currentQuestion>> field=<<answerField>> />
+</$list>
+@@
+
+<$button>
+<$action-listops $field="remaining-quiz-list" $subfilter="+[rest[]]" />
+<$action-listops $field="correct-items" $subfilter="+[append<currentQuestion>]" />
+<$action-setfield correct-answers=<<calc !!correct-answers +1>> />
+<$action-setfield total-attempts=<<calc !!total-attempts +1>> />
+{{$:/core/images/done-button}}<font color=green> Correct! </font>
+</$button>  
+<$button>
+<$action-listops $field="remaining-quiz-list" $subfilter="+[putlast[]]" />
+<$action-listops $field="wrong-items" $subfilter="+[append<currentQuestion>]" />
+<$action-setfield total-attempts=<<calc !!total-attempts +1>> />
+{{$:/core/images/close-button}}<font color=red> Wrong! </font>
+</$button>
+
+</$list>
+</$list>

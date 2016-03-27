@@ -1,0 +1,22 @@
+created: 20160325124828262
+modified: 20160325125614028
+tags: 
+title: Check Entry Tiddler and Update Component List
+type: text/plain
+
+[
+  {"#dummyzerostring":" 0]]"},
+  {"#one":"1"},
+  {"#space":" "},
+  {"#openingbrackets":"[["},
+  {"#closingbrackets":"]]"},
+  {"#listfield":"((*@exists($list)*??*$list*??*#dummyzerostring*))"},
+  {"#rule": "/^.*? (\\d+)\\]\\]$/g"},
+  {"#term": "$1"},
+  {"#sequencenumber": "((*#listfield/#rule/#term*))"},
+  {"#newsequencenumber": "((*#sequencenumber+#one*))"},
+  {"#vocabularyentry": "((*$title*))"},
+  {"#entrycomponentfuturetitle":"((*#vocabularyentry*))((*#space*))((*#newsequencenumber*))"},
+  {"#tempfield":"((*@exists($list)*??*$list*))((*@exists($list)*??*#space*))((*#openingbrackets*))((*#entrycomponentfuturetitle*))((*#closingbrackets*))"},
+  {"$list":"((*#tempfield*))"}
+]

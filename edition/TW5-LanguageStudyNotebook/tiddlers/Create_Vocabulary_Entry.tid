@@ -1,0 +1,16 @@
+created: 20150812171857538
+modified: 20160325131433747
+tags: 
+title: Create Vocabulary Entry
+type: text/plain
+
+[
+  {"$type":"text/vnd.tiddlywiki"},
+  {"$location":"((*@pageRef*))"},
+  {"$when":"((*@dateTimeShort*))"},
+  {"#temp1":"((*@hasText*??*@text*??*@clip*))"},
+  {"#rule": "/^\\s*(.+?)\\s*$/g"},
+  {"#term": "$1"},
+  {"#temp2": "((*#temp1/#rule/#term*))"},
+  {"$vocabulary_entry":"((*#temp2*))"}
+]

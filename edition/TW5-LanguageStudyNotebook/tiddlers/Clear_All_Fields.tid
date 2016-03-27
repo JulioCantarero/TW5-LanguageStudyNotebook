@@ -1,0 +1,13 @@
+created: 20150813120341708
+modified: 20160325103023035
+title: Clear All Fields
+type: text/plain
+
+[
+  {"#mydummyvar1":"((*@exists($item_definition)*??*@delete($item_definition)*))"},
+  {"#mydummyvar2":"((*@exists($item_examples)*??*@delete($item_examples)*))"},
+  {"#mydummyvar3":"((*@exists($item_notes)*??*@delete($item_notes)*))"},
+  {"#mydummyvar4":"((*@exists($item_other_forms)*??*@delete($item_other_forms)*))"},
+  {"#mydummyvar5":"((*@exists($item_type)*??*@delete($item_type)*))"},
+  {"#mydummyvar6":"((*@exists($ipa_pronuntiation)*??*@delete($ipa_pronuntiation)*))"}
+]

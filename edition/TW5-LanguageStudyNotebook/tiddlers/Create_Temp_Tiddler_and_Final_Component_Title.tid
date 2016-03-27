@@ -1,0 +1,22 @@
+created: 20150814074942741
+modified: 20160325203842348
+title: Create Temp Tiddler and Final Component Title
+type: text/plain
+
+[
+  {"#dummyzerostring":" 0]]"},
+  {"#one":"1"},
+  {"#space":" "},
+  {"#openingbrackets":"[["},
+  {"#closingbrackets":"]]"},
+  {"#listfield":"((*@exists($list)*??*$list*??*#dummyzerostring*))"},
+  {"#rule": "/^.*? (\\d+)\\]\\]$/g"},
+  {"#term": "$1"},
+  {"#sequencenumber": "((*#listfield/#rule/#term*))"},
+  {"#newsequencenumber": "((*#sequencenumber+#one*))"},
+  {"#vocabularyentry": "((*$title*))"},
+  {"#entrycomponentfuturetitle":"((*#vocabularyentry*))((*#space*))((*#newsequencenumber*))"},
+  {"$final_title":"((*#entrycomponentfuturetitle*))"},
+  {"#tempcomponenttiddler":"$:/state/NewVocabularyEntry"},
+  {"$title":"((*#tempcomponenttiddler*))"}
+]

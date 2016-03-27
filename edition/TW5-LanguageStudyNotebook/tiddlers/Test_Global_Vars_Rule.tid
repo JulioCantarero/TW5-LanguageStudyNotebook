@@ -1,0 +1,8 @@
+created: 20160325215925097
+modified: 20160325215934513
+title: Test Global Vars Rule
+type: text/vnd.tiddlywiki
+
+|!Title|!Body|!Tags|!Fields modifiers|!field initials|!Modes|
+|Test Variable Scope Tiddler|||[[Test Variable Scope Rule 1]]|| append add |
+|Test Variable Scope Tiddler|||[[Test Variable Scope Rule 2]]|| append add |
