@@ -1,0 +1,18 @@
+created: 20160826183907706
+modified: 20160826192823319
+tags: 
+title: Language Study Notebook
+type: text/vnd.tiddlywiki
+
+!!To do
+*Use TiddlyClip new ``:`` variables to implement sub-tiddlers names
+*Process the selected text for pronunciation and remove leading and final ``/`` if present
+*Process Word / Expression input and capitalise first letter
+*Read how letter shortcuts for the contextual menu in FF works
+*Add configurable tags
+*Split entries in ``VocabularyEntry`` and ``EntryItem``
+*Make a ''Cambridge Version'' to benefit from word info present in the page:
+**No need to select text for new entry. If in a new page and add definition, we will know it is a new word so save and create a new tiddler. Create can be removed. Close is Optional.
+
+!!Developing Notes
+*Entries that contain accents are perfectly processed by TiddlyWiki in Node.js. Both the tiddler name and the file name that stores it contain the accent letter fine, but ``git`` fails to handle this correctly. So this is not a problem.

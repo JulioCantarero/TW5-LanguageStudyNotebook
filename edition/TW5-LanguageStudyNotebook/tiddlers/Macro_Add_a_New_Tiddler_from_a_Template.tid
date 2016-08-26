@@ -1,0 +1,12 @@
+created: 20160328203544265
+modified: 20160328203731075
+tags: $:/tags/Macro
+title: Macro Add a New Tiddler from a Template
+type: text/vnd.tiddlywiki
+
+\define newTid(template)
+<$button message="tm-new-tiddler" param="$template$"
+style="padding: 0 3px 0 3px; background: none; border: 1px solid gray;" >
+{{$:/core/images/new-button}} $template$
+</$button>
+\end

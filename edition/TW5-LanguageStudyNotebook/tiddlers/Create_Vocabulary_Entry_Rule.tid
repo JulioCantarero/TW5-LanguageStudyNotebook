@@ -1,9 +1,9 @@
 created: 20150812162748737
-modified: 20160327094429323
+modified: 20160826215550932
 title: Create Vocabulary Entry Rule
 type: text/vnd.tiddlywiki
 
 |!Title|!Body|!Tags|!Field deltas|!Field initials|!Modes|
 |$:/temp/NewVocabularyEntry|||[[If Exists Close Previous Entry Using Timestamps]]||append add|
 |$:/temp/NewVocabularyEntry||VocabularyEntryComponent|[[Create Vocabulary Entry Using Timestamps]]||append add|
-|[[VocabularyEntryTiddlerTitle]]||VocabularyEntry|[[Add Entry Component to List]]||append add|
+|[[VocabularyEntryTiddlerTitle]]||VocabularyEntry|[[Add Entry Component to List Using Timestamps]]||append add|
