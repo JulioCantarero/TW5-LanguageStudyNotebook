@@ -1,0 +1,22 @@
+created: 20160826195929159
+modified: 20160826215057279
+tags: 
+title: Add Entry Component to List Using a Sequence Number
+type: text/plain
+
+[
+  {"#space":" "},
+  {"#openingbrackets":"[["},
+  {"#closingbrackets":"]]"},
+  {"#nolist":"Dummy 0"},
+  {"#one":"1"},
+  {"#rule": "/.+?\\s+(\\d+)$/g"},
+  {"#term": "$1"},
+  {"#tempfield":"((*@exists($list)*??*$list*??*#nolist*))"},
+  {"#previousnumber": "((*#tempfield/#rule/#term*))"},
+  {":sequencenumber": "((*#previousnumber+#one*))"},
+  {"#vocabularyentry": "((*$title*))"},
+  {"#newentrytitle":"((*#vocabularyentry*))((*#space*))((*:sequencenumber*))"},
+  {"#tempfield":"((*@exists($list)*??*$list*))((*@exists($list)*??*#space*))((*#openingbrackets*))((*#newentrytitle*))((*#closingbrackets*))"},
+  {"$list":"((*#tempfield*))"}
+]

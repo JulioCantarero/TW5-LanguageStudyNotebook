@@ -1,7 +1,7 @@
-created: 20160325130914529
-modified: 20160325233453496
+created: 20160826214822903
+modified: 20160826215450325
 tags: 
-title: If Exists Close Previous Entry Using Timestamps
+title: If Exists Close Previous Entry Using a Sequence Number
 type: text/plain
 
 [
@@ -19,8 +19,8 @@ type: text/plain
   {"$item_other_forms":"((*#tempfield*))"},
   {"#tempfield":"((*@exists($ipa_pronuntiation)*??*$ipa_pronuntiation*??*#emptystring*))"},
   {"$ipa_pronuntiation":"((*#tempfield*))"},
-  {"#componenttitle":"((*@exists($vocabulary_entry)*??*$vocabulary_entry*))((*@exists($timestamp_suffix)*??*#space*))((*@exists($timestamp_suffix)*??*$timestamp_suffix*))"},
-  {"#tempfield":"((*@exists($timestamp_suffix)*??*@delete($timestamp_suffix)*))"},
+  {"#componenttitle":"((*@exists($vocabulary_entry)*??*$vocabulary_entry*))((*@exists($sequencenumber_suffix)*??*#space*))((*@exists($sequencenumber_suffix)*??*$sequencenumber_suffix*))"},
+  {"#tempfield":"((*@exists($sequencenumber_suffix)*??*@delete($sequencenumber_suffix)*))"},
   {"#temptitle":"((*@exists($vocabulary_entry)*??*#componenttitle*??*$title*))"},
   {"$title":"((*#temptitle*))"}
 ]

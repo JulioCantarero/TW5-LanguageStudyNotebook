@@ -1,7 +1,7 @@
-created: 20160325131124816
-modified: 20160325232956525
+created: 20160826214738996
+modified: 20160826215454176
 tags: 
-title: Create Vocabulary Entry Using Timestamps
+title: Create Vocabulary Entry Using a Sequence Number
 type: text/plain
 
 [
@@ -13,10 +13,7 @@ type: text/plain
   {"#term": "$1"},
   {"#temp2": "((*#temp1/#rule/#term*))"},
   {"$vocabulary_entry":"((*#temp2*))"},
-  {"#rule": "/\\d+\\/\\d+\\/(\\d+)\\s(\\d+):(\\d+):(\\d+)$/g"},
-  {"#term": "$1$2$3$4"},
-  {"#timestamp": "((*@dateTimeShort/#rule/#term*))"},
-  {"$timestamp_suffix":"((*#timestamp*))"},
+  {"$sequencenumber_suffix":"((*:sequencenumber*))"},
   {"#mydummyvar1":"((*@exists($item_definition)*??*@delete($item_definition)*))"},
   {"#mydummyvar2":"((*@exists($item_examples)*??*@delete($item_examples)*))"},
   {"#mydummyvar3":"((*@exists($item_notes)*??*@delete($item_notes)*))"},
