@@ -13,7 +13,7 @@ type: text/plain
   {"#term": "$1"},
   {"#temp2": "((*#temp1/#rule/#term*))"},
   {"$vocabulary_entry":"((*#temp2*))"},
-  {"$sequencenumber_suffix":"((*:sequencenumber*))"},
+  {"$sequencenumber_suffix":"((*%sequencenumber*))"},
   {"#mydummyvar1":"((*@exists($item_definition)*??*@delete($item_definition)*))"},
   {"#mydummyvar2":"((*@exists($item_examples)*??*@delete($item_examples)*))"},
   {"#mydummyvar3":"((*@exists($item_notes)*??*@delete($item_notes)*))"},

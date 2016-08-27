@@ -18,7 +18,7 @@ type: text/plain
   {"$item_other_forms":"((*#tempfield*))"},
   {"#tempfield":"((*@exists($ipa_pronuntiation)*??*$ipa_pronuntiation*??*#emptystring*))"},
   {"$ipa_pronuntiation":"((*#tempfield*))"},
-  {"#temptitle":"((*$vocabulary_entry*))((*#space*))((*$timestamp_suffix*))"},
-  {"#mydummyvar14":"((*@exists($timestamp_suffix)*??*@delete($timestamp_suffix)*))"},
+  {"#temptitle":"((*$vocabulary_entry*))((*#space*))((*$sequencenumber_suffix*))"},
+  {"#mydummyvar14":"((*@exists($timestamp_suffix)*??*@delete($sequencenumber_suffix)*))"},
   {"$title":"((*#temptitle*))"}
 ]
